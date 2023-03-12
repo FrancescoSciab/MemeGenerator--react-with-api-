@@ -1,0 +1,35 @@
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(15, 154, 154);
+}
+
+h2, h4{
+  margin: 20px;
+}
+
+main{
+  padding: 36px;
+}
+
+.form{
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 20px;
+}
+
+input{
+  border-radius: 5px;
+  text-indent: 7px;
+}
+
+.form-button{
+  grid-column: 1/ -1;
+}
+
+button{ 
+  background-color: rgb(15, 154, 154);
+  border-radius: 5px;
+  border-color: rgb(15, 154, 154);
+}
