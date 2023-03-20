@@ -1,30 +1,35 @@
 import { useState } from "react"
+import { useEffect } from "react"
 
 
 export default function Meme(){
     const [meme, setMeme] = useState({
         topText: "",
         bottomText: "",
-        randomImage: "https://source.unsplash.com/JmuyB_LibRo"
+        randomImage: ""
     })
 
     const [allMemes, setAllMemes] = useState([])
 
-    useState(() => {
+    useEffect(() => {
         fetch("https://api.imgflip.com/get_memes")
             .then(res => res.json())
             .then(data => setAllMemes(data.data.memes))
     }, [])
-    console.log(allMemes)
+    
+
 
     function getMemeImage() {
-        const randomNumber = Math.floor(Math.random() * allMemes.lenght)
+        const memesLenght = allMemes.length
+        const randomNumber = Math.floor(Math.random() * memesLenght)
+
         const url = allMemes[randomNumber].url
         setMeme(prevMeme => ({
             ...prevMeme,
             randomImage: url
         }))
     }
+
     function handleChange(event){
         const {name, value} = event.target
         setMeme(prevMeme => ({
@@ -53,21 +58,14 @@ export default function Meme(){
                     onChange={handleChange}
                 />
 
-                <button className='form-button'>Generate meme</button>
+                <button                                         className='form-button'
+                    onClick={getMemeImage}>Generate meme</button>
 
                 <div className="meme">
                     <img src={meme.randomImage} className="meme--image" />
                     <h2 className="meme--text top">{meme.topText}</h2>
                     <h2 className="meme--text bottom">{meme.bottomText}</h2>
                 </div>
-            </div>
-
-
-            
-                
-            
-            <div className='meme-section'>
-
             </div>
        </main>
     )
