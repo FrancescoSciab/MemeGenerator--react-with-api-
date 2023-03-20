@@ -1,3 +1,4 @@
+
 header{
   display: flex;
   justify-content: space-between;
@@ -11,6 +12,7 @@ h2, h4{
 
 main{
   padding: 36px;
+  
 }
 
 .form{
@@ -32,4 +34,12 @@ button{
   background-color: rgb(15, 154, 154);
   border-radius: 5px;
   border-color: rgb(15, 154, 154);
+}
+
+.meme{
+  grid-column: 1/ -1;
+}
+
+img{
+  width: 100%;
 }
