@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.fec8624e.css",
-    "main.js": "/static/js/main.ffd32475.js",
-    "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
-    "index.html": "/index.html",
-    "main.fec8624e.css.map": "/static/css/main.fec8624e.css.map",
-    "main.ffd32475.js.map": "/static/js/main.ffd32475.js.map",
-    "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
+    "main.css": "/MemeGenerator--react-with-api-/static/css/main.fec8624e.css",
+    "main.js": "/MemeGenerator--react-with-api-/static/js/main.4ef2ab1c.js",
+    "static/js/787.28cb0dcd.chunk.js": "/MemeGenerator--react-with-api-/static/js/787.28cb0dcd.chunk.js",
+    "index.html": "/MemeGenerator--react-with-api-/index.html",
+    "main.fec8624e.css.map": "/MemeGenerator--react-with-api-/static/css/main.fec8624e.css.map",
+    "main.4ef2ab1c.js.map": "/MemeGenerator--react-with-api-/static/js/main.4ef2ab1c.js.map",
+    "787.28cb0dcd.chunk.js.map": "/MemeGenerator--react-with-api-/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fec8624e.css",
-    "static/js/main.ffd32475.js"
+    "static/js/main.4ef2ab1c.js"
   ]
 }
